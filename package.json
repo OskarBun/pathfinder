@@ -4,7 +4,8 @@
   "description": "HyperCat Catalogue Server",
   "main": "api.js",
   "scripts": {
-    "start": "nodemon lib/api.js",
+    "start": "node lib/api.js",
+    "dev": "nodemon lib/api.js",
     "test": "node_modules/jshint/bin/jshint lib/*.js && node tools/emptydb.js && node_modules/mocha/bin/mocha -t 15000"
   },
   "repository": {
@@ -26,7 +27,6 @@
     "URIjs": "~1.10.2",
     "mongodb": "~1.2.13",
     "underscore": "~1.4.4",
-    "ascoltatori": "~0.6.0",
     "redis": "~0.8.3",
     "mqtt": "~0.2.10",
     "async": "~0.2.9"
